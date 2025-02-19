@@ -1,0 +1,198 @@
+/* Сброс */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Основные стили */
+  body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    color: #333;
+    background-color: #eef2ed;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Шапка сайта */
+  .site-header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 15px 0;
+    position: relative;
+  }
+  
+  .site-title {
+    font-size: 24px;
+    margin: 0;
+    display: inline-block;
+  }
+  
+  .menu-toggle {
+    float: right;
+    background: #27ae60;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .top-nav {
+    display: none;
+  }
+  
+  .top-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  
+  .top-nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  @media (min-width: 768px) {
+    .menu-toggle {
+      display: none;
+    }
+    .top-nav {
+      display: block !important;
+      float: right;
+    }
+  }
+  
+  /* Баннер */
+  .banner {
+    position: relative;
+    background: url("https://via.placeholder.com/1600x500?text=Tractor+Works+Green") no-repeat center/cover;
+    height: 400px;
+  }
+  
+  .banner .overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+  }
+  
+  .banner h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .banner p {
+    font-size: 18px;
+  }
+  
+  /* Преимущества */
+  .advantages {
+    margin: 40px 0;
+  }
+  
+  .advantages h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+  .adv-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  
+  .adv-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    border-left: 5px solid #27ae60;
+  }
+  
+  .adv-card h4 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+  }
+  
+  /* Услуги */
+  .services {
+    margin: 40px 0;
+  }
+  
+  .services h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .services ul {
+    list-style: none;
+    font-size: 18px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .services li {
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 3px;
+  }
+  
+  /* Команда */
+  .team {
+    margin: 40px 0;
+    text-align: center;
+  }
+  
+  .team h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  .team p {
+    font-size: 16px;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+  
+  /* Контакты */
+  .contacts {
+    margin: 40px 0;
+  }
+  
+  .contacts h3 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .contacts p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .contacts a {
+    color: #27ae60;
+    text-decoration: none;
+  }
+  
+  /* Подвал */
+  .site-footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
