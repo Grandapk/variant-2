@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Контакты — Строительная фирма CASE</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">CASE<span>Pro</span></h1>
+      <nav class="navigation">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="contact.html" class="active">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="contact container">
+    <h2>Свяжитесь с нами</h2>
+    <p>Телефон: <a href="tel:+70000000000">+7 (000) 000-00-00</a></p>
+    <p>Email: <a href="mailto:info@casepro.ru">info@casepro.ru</a></p>
+    <p>Адрес: г. Примерск, ул. Строительная, д. 123</p>
+
+    <form class="contact-form">
+      <label for="name">Ваше имя:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="message">Сообщение:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>CASEPro © 2025. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
