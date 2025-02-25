@@ -30,3 +30,24 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("load", toggleBurgerVisibility);
   window.addEventListener("resize", toggleBurgerVisibility);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    // Показываем кнопку при прокрутке вниз
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 300) {
+            scrollToTopBtn.classList.add("show");
+        } else {
+            scrollToTopBtn.classList.remove("show");
+        }
+    });
+
+    // Прокрутка страницы вверх при клике на кнопку
+    scrollToTopBtn.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+});
