@@ -228,6 +228,11 @@
     border: 2px solid #fff;
     border-radius: 50px;
   }
+
+.btn-red:hover{
+  color: #d7110a;
+  background-color: #e3e5e7;
+}
   
   .btn-white:hover {
     color: #ec0000;
@@ -478,6 +483,28 @@ body {
   color: #666;
 }
 
+/* Контейнер для трех секций */
+.three-box-section {
+  display: flex;
+  justify-content: space-between; /* Равномерное распределение */
+  align-items: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 20px;
+  background-color: #e6e7e8; /* Серый фон */
+  border-radius: 10px; /* Скругление углов */
+}
+
+/* Каждая секция */
+.box {
+  flex: 1; /* Равномерное распределение ширины */
+  height: 200px; /* Высота секций */
+  background-color: #ffffff; /* Белый фон */
+  border-radius: 20px; /* Скругленные углы */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
 /* Стили для кнопки "Вверх" */
 .scroll-to-top {
   position: fixed;
@@ -506,4 +533,182 @@ body {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+}
+
+
+.reviews-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.reviews-section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #666;
+  font-weight: normal;
+}
+
+.review-slider {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.review {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.review img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.review.active {
+  opacity: 1;
+}
+
+
+.features-section {
+  text-align: center;
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.features-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.features-subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+/* Сетка из 3 колонок */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Оформление карточек */
+.feature {
+  text-align: left;
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.feature img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.feature h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.learn-more {
+  color: #007BFF;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.learn-more:hover {
+  text-decoration: underline;
+}
+
+/* Оформление выделенного блока */
+.highlighted-feature {
+  border: 2px solid #007BFF;
+  padding: 25px;
+}
+
+/* Адаптивность */
+@media (max-width: 992px) {
+  .features-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .features-grid {
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.contact-info {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.contact-info h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.2rem;
+}
+
+.contact-item img {
+  width: 30px;
+  height: 30px;
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+  .contact-details {
+      flex-direction: column;
+      align-items: center;
+  }
 }
