@@ -293,7 +293,7 @@
   /* Адаптивность */
   @media (max-width: 768px) {
     .nav-links {
-      position: absolute;
+      position: fixed;
       top: 130px;
       right: 0;
       background-color: #e11414ea;
@@ -301,7 +301,9 @@
       width: 100%;
       align-items: center;
       transform: translateX(100%);
-      transition: transform 0.3s;
+      transition: right 0.1s ease-in-out; /* Плавный эффект */
+      display: flex;
+      justify-content: center;
     
     }
   
