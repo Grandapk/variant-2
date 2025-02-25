@@ -293,12 +293,14 @@
   /* Адаптивность */
   @media (max-width: 768px) {
     .nav-links {
+      right: -100%; /* Скрываем меню за экраном */
       position: fixed;
       top: 130px;
       right: 0;
       background-color: #e11414ea;
       flex-direction: column;
-      width: 100%;
+      width: 70%; /* Ширина меню */
+      height: 100vh; /* Полная высота */
       align-items: center;
       transform: translateX(100%);
       transition: right 0.1s ease-in-out; /* Плавный эффект */
@@ -336,8 +338,10 @@
   
     .nav-links.nav-active {
       transform: translateX(0);
+      right: 0; /* Показываем меню */
     }
   }
+  
 /* Анимация бургера при открытии */
 .burger.open div:nth-child(1) {
   transform: translateY(10px) rotate(45deg);
