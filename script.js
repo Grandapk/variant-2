@@ -1,18 +1,32 @@
-// Пример простой функции для кнопки "Узнать больше" на главной
-function learnMore() {
-    alert("Переход на страницу услуг!");
-    window.location.href = "services.html";
-  }
-  
-  // Дополнительный код (валидация формы или что-то ещё) можете добавить здесь.
-  document.addEventListener("DOMContentLoaded", () => {
-    const contactForm = document.querySelector(".contact-form");
-    if (contactForm) {
-      contactForm.addEventListener("submit", (event) => {
-        event.preventDefault();
-        alert("Спасибо за сообщение! Мы свяжемся с вами в ближайшее время.");
-        contactForm.reset();
-      });
-    }
+document.addEventListener("DOMContentLoaded", function () {
+  const burger = document.getElementById('burger');
+  const menu = document.getElementById('menu');
+
+  burger.addEventListener('click', (event) => {
+      menu.classList.toggle('nav-active');
+      burger.classList.toggle('open');
+      event.stopPropagation();
   });
-  
+
+  document.body.addEventListener('click', () => {
+      menu.classList.remove('nav-active');
+      burger.classList.remove('open');
+  });
+
+  menu.addEventListener('click', (event) => {
+      event.stopPropagation();
+  });
+
+  function toggleBurgerVisibility() {
+      if (window.innerWidth <= 768) {
+          burger.style.display = "flex";
+      } else {
+          burger.style.display = "none";
+          menu.classList.remove('nav-active');
+          burger.classList.remove('open');
+      }
+  }
+
+  window.addEventListener("load", toggleBurgerVisibility);
+  window.addEventListener("resize", toggleBurgerVisibility);
+});

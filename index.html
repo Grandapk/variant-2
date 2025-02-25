@@ -3,49 +3,101 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Главная — Строительная фирма CASE</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>RVS OÜ – Строительные услуги</title>
+  <!-- Подключаем CSS -->
+  <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
 
-  <!-- Шапка сайта с меню -->
-  <header class="site-header">
-    <div class="container">
-      <h1 class="logo">CASE<span>Pro</span></h1>
-      <nav class="navigation">
-        <ul>
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="services.html">Услуги</a></li>
-          <li><a href="contact.html">Контакты</a></li>
-        </ul>
-      </nav>
-    </div>
+  <!-- Шапка сайта (header) -->
+  <header>
+    <nav class="navbar">
+        <!-- Лого слева -->
+        <div class="logo-left">
+          <img src="Logo-left.png" alt="Логотип слева" />
+        </div>
+        
+      <ul class="nav-links" id="menu">
+        <!-- Пункт «Услуги» с выпадающим меню -->
+        <li class="dropdown">
+          <a href="#">УСЛУГИ</a>
+          <!-- Выпадающее подменю -->
+          <ul class="dropdown-content">
+            <li>
+                <a href="#a">СТРОИТЕЛЬНЫЕ РАБОТЫ
+                <p><h4>Любая работа под ваш запрос.</h4></p></a>
+            </li>
+            <li><a href="#b">АРЕНДА ТЕХНИКИ
+                <p><h4>Арендуй строительную технику.</h4></p></a>
+            </li>  
+            <li><a href="#c">ДОСТАВКА МАТЕРИАЛА
+                <p></p><h4>Доставим ваш материал в любую точку.</h4></li></a>
+          </ul>
+        </li>
+        <!-- Остальные пункты меню -->
+        <li><a href="#reviews">ОТЗЫВЫ</a></li>
+        <li><a href="#about">О НАС</a></li>
+        <li><a href="#contact" class="contact-button">СВЯЗАТЬСЯ</a></li>
+      </ul>
+      <!-- Кнопка-бургер (для мобильных) -->
+      <div class="burger" id="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
   </header>
 
-  <!-- Блок-баннер с кратким описанием -->
+  <!-- Герой-блок (Hero section) -->
   <section class="hero">
-    <div class="container">
-      <h2>Тракторные работы и аренда контейнеров</h2>
-      <p>Профессиональное обслуживание на надёжной технике CASE</p>
-      <button class="hero-btn" onclick="learnMore()">Узнать больше</button>
+    <div class="services-dropdown">
+        ...
+      </div>
+    <!-- Затемняющая подложка поверх фона (для читаемости текста) -->
+    <div class="overlay"></div>
+    
+    <!-- Контент в hero-блоке -->
+    <div class="hero-content">
+        <h2>ПЕРВОКЛАССНЫЕ</h2>  
+        <h3><span style="color: #ebce5a;">УСЛУГИ И РЕЗУЛЬТАТ</span></h3>
+        <p>Любая работа. Любимые пожелания. Доставка материала.</p>
+      <div class="hero-buttons">
+        <a href="#works" class="btn-red">НАШИ РАБОТЫ</a>
+        <a href="#reviews" class="btn-white">ОТЗЫВЫ</a>
+      </div>
     </div>
+
+    <!-- Всплывающее “меню услуг”, как на макете (по желанию)
+    <div class="services-dropdown" id="services">
+      <h3>СТРОИТЕЛЬНЫЕ РАБОТЫ</h3>
+      <p>Любая работа под ваш запрос.</p>
+      <h3>АРЕНДА ТЕХНИКИ</h3>
+      <p>Аренда строительной техники.</p>
+      <h3>ДОСТАВКА МАТЕРИАЛА</h3>
+      <p>Доставим ваш материал в любую точку.</p>
+    </div> -->
   </section>
 
-  <!-- Короткий блок "О нас" -->
-  <section class="about container">
-    <h3>О нас</h3>
-    <p>Наша компания специализируется на выполнении тракторных работ (на технике CASE), перевозке строительных материалов и аренде контейнеров для мусора. Также мы занимаемся озеленением, благоустройством и укладкой тротуарной плитки.</p>
-    <p>Опытная команда, современная техника и внимание к деталям — наша гарантия качества.</p>
+  <!-- Прочие секции (пример) -->
+  <section class="content-section" id="works">
+    <h2>Наши работы</h2>
+    <p>Здесь вы можете разместить фото/галерею своих проектов.</p>
   </section>
 
-  <!-- Подвал сайта -->
-  <footer class="site-footer">
-    <div class="container">
-      <p>CASEPro © 2025. Все права защищены.</p>
-    </div>
-  </footer>
+  <section class="content-section" id="reviews">
+    <h2>Отзывы</h2>
+    <p>Отзывы довольных клиентов.</p>
+  </section>
 
-  <!-- Подключаем общий скрипт -->
-  <script src="script.js"></script>
+  <section class="content-section" id="about">
+    <h2>О нас</h2>
+    <p>Коротко расскажите о компании, целях и ценностях.</p>
+  </section>
+
+  <!-- Подключаем JS -->
+  <script src="script.js"></script>     
+
+
 </body>
 </html>
