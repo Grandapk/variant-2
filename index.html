@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RVS OÜ – Строительные услуги</title>
+  <!-- Подключаем CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+  <!-- Шапка сайта (header) -->
+  <header>
+    <nav class="navbar">
+        <!-- Лого слева -->
+        <div class="logo-left">
+          <img src="Logo-left.png" alt="Логотип слева" />
+        </div>
+        
+      <ul class="nav-links" id="menu">
+        <!-- Пункт «Услуги» с выпадающим меню -->
+        <li class="dropdown">
+          <a href="#">УСЛУГИ</a>
+          <!-- Выпадающее подменю -->
+          <ul class="dropdown-content">
+            <li>
+                <a href="#a">СТРОИТЕЛЬНЫЕ РАБОТЫ
+                <p><h4>Любая работа под ваш запрос.</h4></p></a>
+            </li>
+            <li><a href="#b">АРЕНДА ТЕХНИКИ
+                <p><h4>Арендуй строительную технику.</h4></p></a>
+            </li>  
+            <li><a href="#c">ДОСТАВКА МАТЕРИАЛА
+                <p></p><h4>Доставим ваш материал в любую точку.</h4></li></a>
+          </ul>
+        </li>
+        <!-- Остальные пункты меню -->
+        <li><a href="#reviews">ОТЗЫВЫ</a></li>
+        <li><a href="#about">О НАС</a></li>
+        <li><a href="#contact" class="contact-button">СВЯЗАТЬСЯ</a></li>
+      </ul>
+      <!-- Кнопка-бургер (для мобильных) -->
+      <div class="burger" id="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Герой-блок (Hero section) -->
+  <section class="hero">
+    <div class="services-dropdown">
+        ...
+      </div>
+    <!-- Затемняющая подложка поверх фона (для читаемости текста) -->
+    <div class="overlay"></div>
+    
+    <!-- Контент в hero-блоке -->
+    <div class="hero-content">
+        <h2>ПЕРВОКЛАССНЫЕ</h2>  
+        <h2><span style="color: #ebce5a;">УСЛУГИ И РЕЗУЛЬТАТ</span></h2>
+        <h4><p>Любая работа. Любимые пожелания. Доставка материала.</p></h4>
+      <div class="hero-buttons">
+        <a href="#works" class="btn-red">НАШИ РАБОТЫ</a>
+        <a href="#reviews" class="btn-white">ОТЗЫВЫ</a>
+      </div>
+    </div>
+
+    <!-- Всплывающее “меню услуг”, как на макете (по желанию)
+    <div class="services-dropdown" id="services">
+      <h3>СТРОИТЕЛЬНЫЕ РАБОТЫ</h3>
+      <p>Любая работа под ваш запрос.</p>
+      <h3>АРЕНДА ТЕХНИКИ</h3>
+      <p>Аренда строительной техники.</p>
+      <h3>ДОСТАВКА МАТЕРИАЛА</h3>
+      <p>Доставим ваш материал в любую точку.</p>
+    </div> -->
+  </section>
+
+  <!-- Прочие секции (пример) -->
+
+
+
+  <section class="content-section">
+    <div class="image-grid">
+        <div class="image-box">
+            <img src="foto1.jpg" alt="Construction Worker">
+        </div>
+        <div class="image-box">
+            <img src="foto2.jpg" alt="Engineers">
+        </div>
+        <div class="image-box">
+            <img src="foto3.jpg" alt="Building Plans">
+        </div>
+        <div class="image-box">
+            <img src="foto4.jpg" alt="Teamwork">
+        </div>
+    </div>
+
+    <div class="text-container">
+        <hr class="section-line">
+        <h2>Take A Glimpse Into Our Construction Voyage</h2>
+        <p>A Trailblazer In The Construction Industry. Our Journey Is One Of Passion, Dedication, And A Relentless Pursuit Of Excellence.</p>
+        <div class="stats">
+            <div class="stat">
+                <span class="number">600+</span>
+                <p>Worked With 600+ Big Companies</p>
+            </div>
+            <div class="stat">
+                <span class="number">800+</span>
+                <p>Projects Completed Successfully</p>
+            </div>
+            <div class="stat">
+                <span class="number">99%</span>
+                <p>We Stand With 99% Success Rate</p>
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+  <section class="services-section">
+   <H3>Услуги</H3>
+    <div class="service">
+        <h2>Общестроительные работы</h2>
+        <p>Наши услуги охватывают все ключевые аспекты строительства, начиная от подготовки строительной площадки и земляных работ до возведения зданий и сооружений.</p>
+    </div>
+
+    <div class="service">
+        <h2>Аренда техники</h2>
+        <p>Мы предоставляем в аренду надежную строительную технику для выполнения различных видов работ.</p>
+    </div>
+
+    <div class="service">
+        <h2>Доставка материала</h2>
+        <p>Наши услуги охватывают все ключевые аспекты строительства, начиная от подготовки строительной площадки и земляных работ до возведения зданий и сооружений.</p>
+    </div>
+</section>
+  <!-- Подключаем JS -->
+  <script src="script.js"></script>     
+
+<button id="scrollToTopBtn" class="scroll-to-top">↑</button>
+</body>
+</html>
