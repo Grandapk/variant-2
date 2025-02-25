@@ -33,7 +33,7 @@
   margin-top: 50px;
   justify-content: space-between;
   align-items: center;
-
+  
 }
 
 .logo-left>img {
@@ -44,7 +44,7 @@
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 100px;
   }
   
   .nav-links li a {
@@ -55,6 +55,7 @@
     font-weight: bold; /* Жирный текст */
     padding: 15px 15px;
     color: rgb(255, 255, 255);
+  
   }
 
   .contact-button {
@@ -179,10 +180,10 @@
 
     max-width: 700px;
     padding:  20px;
-    margin-left: 9%;  /* или другой отступ */
+    margin-left: 7%;  /* или другой отступ */
     text-align: left; 
     line-height: 1.2;
-   
+   font-size: 1.em;
     padding-top: 10em;
   }
   
@@ -192,7 +193,7 @@
   }
   
   .hero-content p {
-    font-size: 1.2rem;
+    font-size: 20px;
     margin-bottom: 30px;
   }
   
@@ -258,20 +259,7 @@
     font-size: 0.9rem;
   }
   
-  /* Пример стилизации остальных секций */
-  .content-section {
-    max-width: 1200px;
-    margin: 80px auto;
-    padding: 0 20px;
-  }
-  
-  .content-section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    color: #222;
-  }
-  
+
   /* Футер */
   footer {
     background-color: #f5f5f5;
@@ -299,8 +287,7 @@
       right: 0;
       background-color: #e11414ea;
       flex-direction: column;
-      width: 70%; /* Ширина меню */
-      height: 100vh; /* Полная высота */
+      width: 100%; /* Ширина меню */
       align-items: center;
       transform: translateX(100%);
       transition: right 0.1s ease-in-out; /* Плавный эффект */
@@ -309,6 +296,7 @@
     
     }
   
+
     .nav-links li {
       margin: 10px 0;
     }
@@ -341,7 +329,9 @@
       right: 0; /* Показываем меню */
     }
   }
-  
+
+
+
 /* Анимация бургера при открытии */
 .burger.open div:nth-child(1) {
   transform: translateY(10px) rotate(45deg);
@@ -353,3 +343,167 @@
 
 .burger.open div:nth-child(3) {
   transform: translateY(-10px) rotate(-45deg);}
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fefaf5;
+    color: #333;
+}
+
+/* Контейнер контента */
+.content-section {
+    display: flex;
+    flex-direction: row; /* Размещаем блоки в строку */
+    align-items: center; /* Выравниваем по вертикали */
+    justify-content: space-between; /* Равномерное распределение */
+    gap: 40px;
+    max-width: 1700px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+/* Блок с изображениями */
+.image-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Две колонки */
+    gap: 15px;
+}
+
+.image-box {
+    overflow: hidden;
+    border-radius: 20px; /* Закругляем углы */
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-box:hover img {
+    transform: scale(1.05); /* Легкое увеличение при наведении */
+}
+
+/* Блок с текстом */
+.text-container {
+    flex: 1;
+    padding: 20px;
+}
+
+.section-line {
+    width: 50px;
+    height: 4px;
+    background: black;
+    margin-bottom: 10px;
+}
+
+.text-container h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.text-container p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Статистика */
+.stats {
+    display: flex;
+    gap: 30px;
+}
+
+.stat {
+    text-align: left;
+}
+
+.number {
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+}
+
+.stat p {
+    color: #666;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .content-section {
+        flex-direction: column; /* Ставим блоки в колонку */
+        text-align: center;
+    }
+
+    .stats {
+        flex-direction: column;
+        align-items: center;
+    }
+    .services-section{
+      flex-direction: column;
+      align-items: center;
+    }
+}
+
+.services-section {
+  display: flex;
+  justify-content: space-between; /* Распределяем блоки */
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+.service {
+  flex: 1; /* Равномерное распределение */
+  text-align: left;
+}
+
+.service h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Стили для кнопки "Вверх" */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: #d7110a;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+}
+
+.scroll-to-top:hover {
+  background: #e50909;
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
