@@ -51,3 +51,30 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const reviews = document.querySelectorAll(".review");
+    let currentIndex = 0;
+
+    function showNextReview() {
+        reviews[currentIndex].classList.remove("active");
+        currentIndex = (currentIndex + 1) % reviews.length;
+        reviews[currentIndex].classList.add("active");
+    }
+
+    setInterval(showNextReview, 5000); // Переключение каждые 5 секунд
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const contactForm = document.querySelector(".contact-form-section");
+    const toggleButton = document.createElement("button");
+
+    toggleButton.innerText = "Связаться";
+    toggleButton.classList.add("contact-toggle-button");
+
+    document.body.appendChild(toggleButton);
+
+    toggleButton.addEventListener("click", function () {
+        contactForm.classList.toggle("show");
+    });
+});
