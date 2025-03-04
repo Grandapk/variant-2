@@ -156,7 +156,7 @@
     position: relative;
     height: 100vh;
     min-height: 100vh;
-    background: url("background.jpg") no-repeat center center/cover;
+    background: url("./pictures/background.jpg") no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: flex-start; /* заменяем left на flex-start */
@@ -183,15 +183,27 @@
     margin-left: 7%;  /* или другой отступ */
     text-align: left; 
     line-height: 1.2;
-   font-size: 1.em;
-    padding-top: 10em;
+   font-size: 1.2vw;
+  
   }
   
-  .hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-  }
   
+  .hero-content h2 {
+    font-size: 3rem; /* Размер шрифта */
+    font-weight: bold;
+    letter-spacing: 2px; /* Растяжение букв */
+    text-transform: uppercase; /* Все буквы заглавные */
+    color: rgb(255, 255, 255);
+}
+
+
+.hero-content h3 {
+  font-size: 2.2rem; /* Размер для подзаголовка */
+  font-weight: bold;
+  color: #ebce5a;
+  letter-spacing: 1.5px; /* Увеличение расстояния между буквами */
+}
+
   .hero-content p {
     font-size: 20px;
     margin-bottom: 30px;
@@ -200,14 +212,15 @@
   /* Кнопки в hero */
   .hero-buttons {
     display: flex;
-    gap: 20px;
+    gap: 10px;
+    font-size: 1.2rem;
 
   }
   
   .btn-red, .btn-white {
     display: inline-block;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 300;
     border-radius: 4px;
     padding: 12px 24px;
     transition: all 0.3s;
@@ -541,10 +554,11 @@ body {
   padding: 50px 20px;
 }
 
-.reviews-section h2 {
-  font-size: 2rem;
+.reviews-section h3 {
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 20px;
+  font-style: oblique;
 }
 
 .highlight {
@@ -553,7 +567,7 @@ body {
 }
 
 .review-slider {
-  width: 300px;
+  width: 800px;
   height: 300px;
   margin: auto;
   position: relative;
@@ -582,7 +596,7 @@ body {
 .features-section {
   text-align: center;
   padding: 50px 20px;
-  max-width: 1200px;
+  max-width: 1700px;
   margin: auto;
 }
 
@@ -611,7 +625,6 @@ body {
   text-align: left;
   padding: 20px;
   border-radius: 10px;
-  background: white;
   transition: box-shadow 0.3s ease-in-out;
 }
 
@@ -634,7 +647,7 @@ body {
 }
 
 .learn-more {
-  color: #007BFF;
+  color:#ec0000;
   font-weight: bold;
   text-decoration: none;
 }
@@ -659,6 +672,39 @@ body {
 @media (max-width: 600px) {
   .features-grid {
       grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .reviews-section {
+      padding: 30px 15px; /* Уменьшаем отступы */
+      text-align: center; /* Центрируем текст */
+  }
+
+  .review-slider {
+      width: 100%; /* Делаем слайдер на всю ширину */
+      max-width: 400px; /* Ограничиваем максимальную ширину */
+      margin: auto; /* Центрируем */
+  }
+
+  .review {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Выравниваем контент по центру */
+      text-align: center; /* Центрируем текст */
+      padding: 15px; /* Добавляем немного пространства */
+  }
+
+  .review img {
+      width: 100px; /* Уменьшаем размер изображений */
+      height: auto;
+      border-radius: 50%; /* Делаем круглое фото */
+      margin-bottom: 10px; /* Добавляем отступ под фото */
+  }
+
+  .review h3 {
+      font-size: 1rem; /* Уменьшаем размер текста */
+      line-height: 1.4; /* Делаем текст более читабельным */
+      padding: 0 10px; /* Добавляем немного отступов */
   }
 }
 
@@ -721,13 +767,14 @@ body {
 }
 
 .faq-section h2 {
+  color: white;
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
 .faq-container {
-  max-width: 800px;
+  max-width: 1700px;
   margin: auto;
 }
 
@@ -769,4 +816,200 @@ body {
 
 .faq-item.active .faq-toggle {
   transform: rotate(45deg);
+}
+
+.learn-faq{
+  color: #e50909;
+  padding-bottom: 20px;
+  display: inline-block; 
+  margin-left: 30px;
+}
+
+
+
+.contact-form {
+  background-color: #fff; /* Белый фон */
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1700px;
+  width: 100%;
+  padding: 40px;
+  border: 1px solid rgb(0, 0, 0); /* Черная тонкая рамка */
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid black; /* Черная тонкая рамка */
+  border-radius: 5px;
+  font-size: 1rem;
+  background: white;
+  color: black;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+.btn-submit {
+  background: transparent;
+  border: 2px solid #f1b000; /* Желтая рамка */
+  color: black;
+  padding: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-submit:hover {
+  background: #f1b000;
+  color: white;
+}
+
+.privacy {
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.privacy a {
+  color: #f1b000;
+  text-decoration: none;
+}
+
+.privacy a:hover {
+  text-decoration: underline;
+}
+
+/* 📌 Адаптивность */
+@media (max-width: 768px) {
+  .container {
+      padding: 20px;
+  }
+
+  h2 {
+      font-size: 1.8rem;
+  }
+}
+
+.footer {
+  background-color: rgb(0, 0, 0); /* Черный фон */
+  color: white;
+  padding: 50px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Левая часть футера */
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.footer-logo {
+  width: 150px; /* Размер логотипа */
+}
+
+.org-number {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Социальные иконки */
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Колонки */
+.footer-columns {
+  display: flex;
+  gap: 50px;
+}
+
+.footer-column h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #f1b000; /* Желтый цвет при наведении */
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .footer-left {
+      align-items: center;
+  }
+
+  .footer-columns {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      margin-top: 20px;
+  }
 }

@@ -69,8 +69,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const contactForm = document.querySelector(".contact-form-section");
     const toggleButton = document.createElement("button");
 
-    toggleButton.innerText = "Связаться";
-    toggleButton.classList.add("contact-toggle-button");
 
     document.body.appendChild(toggleButton);
 
