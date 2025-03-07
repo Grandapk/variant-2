@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RVS OÜ – Строительные услуги</title>
     <!-- Подключаем CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="works.css">
 
 </head>
 
@@ -43,13 +43,12 @@
                                 <b>ДОСТАВКА МАТЕРИАЛА</b>
                                 <br>Доставим ваш материал в любую точку.</a>
                         </li>
-
                     </ul>
                 </li>
                 <!-- Остальные пункты меню -->
                 <li>
                     <a href="#reviews">
-                      <b>ОТЗЫВЫ</b>
+                        <b>ОТЗЫВЫ</b>
                     </a>
                 </li>
                 <li>
@@ -59,12 +58,10 @@
                 </li>
                 <li>
                     <a href="#contact-form" class="contact-button">
-                        СВЯЗАТЬСЯ
+                        <b>СВЯЗАТЬСЯ</b>
                     </a>
                 </li>
-                
             </ul>
-            
             <!-- Кнопка-бургер (для мобильных) -->
             <div class="burger" id="burger">
                 <div class="line"></div>
@@ -82,8 +79,8 @@
 
         <!-- Контент в hero-блоке -->
         <div class="hero-content">
-            <h2>СТРОИМ С КАЧЕСТВОМ</h2>
-            <h3><span style="color: #ebce5a;">РАБОТАЕМ С ДОВЕРИЕМ</span></h3>
+            <h2><span style="color:black">Строительные</span></h2>
+            <h3><span style="color: #ffffff;">РАБОТЫ</span></h3>
             <h2>
                 <p></p>
             </h2>
@@ -96,81 +93,6 @@
 
     <!-- Прочие секции (пример) -->
 
-
-
-    <section class="content-section">
-        <div class="image-grid">
-            <div class="image-box">
-                <img src="./pictures/foto1.jpg" alt="Construction Worker">
-            </div>
-            <div class="image-box">
-                <img src="./pictures/foto2.jpg" alt="Engineers">
-            </div>
-            <div class="image-box">
-                <img src="./pictures/foto3.jpg" alt="Building Plans">
-            </div>
-            <div class="image-box">
-                <img src="./pictures/foto4.jpg" alt="Teamwork">
-            </div>
-        </div>
-
-        <div class="text-container">
-            <hr class="section-line">
-            <h2>Строим с душой, работаем на результат</h2>
-            <p>Мы — ваш надежный партнер в строительстве. Наш путь — это годы опыта, преданность делу и стремление к
-                высокому качеству. Мы строим не только здания, но и репутацию.</p>
-            <div class="stats">
-                <div class="stat">
-                    <span class="number">10+</span>
-                    <p>Лет опыта на рынке</p>
-                </div>
-                <div class="stat">
-                    <span class="number">50+</span>
-                    <p>Успешных проектов</p>
-                </div>
-                <div class="stat">
-                    <span class="number">99%</span>
-                    <p>Счастливых клиентов</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-    <section class="features-section">
-
-        <p class="features-subtitle">
-
-
-        <div class="features-grid">
-            <div class="feature">
-                <img src="./pictures/masonry.png" alt="RVS">
-                <h2>Общестроительные работы</h2>
-                <p>Наши услуги охватывают все ключевые аспекты строительства, начиная от подготовки строительной
-                    площадки и земляных работ до возведения зданий и сооружений.</p>
-                <a href="#" class="learn-more">Узнать больше →</a>
-            </div>
-
-            <div class="feature">
-                <img src="./pictures/tractor.png" alt="RVS">
-                <h2>Аренда техники</h2>
-                <p>Мы предоставляем в аренду надежную строительную технику для выполнения различных видов работ.</p>
-                <a href="#" class="learn-more">Узнать больше →</a>
-            </div>
-
-            <div class="feature">
-                <img src="./pictures/tipper.png" alt="RVS">
-                <h2>Доставка материала</h2>
-                <p>Наши услуги охватывают все ключевые аспекты строительства, начиная от подготовки строительной
-                    площадки и земляных работ до возведения зданий и сооружений.</p>
-                <a href="#" class="learn-more">Узнать больше →</a>
-            </div>
-
-
-        </div>
-    </section>
 
 
     <section class="reviews-section">
@@ -191,58 +113,141 @@
         </div>
     </section>
 
+    <section class="construction-section">
+      <div class="content">
+          <h2>СТРОИТЕЛЬСТВО И РЕМОНТ</h2>
+          <ul>
+              <li>Объектов различного назначения</li>
+              <li>Профильных и черепичных крыш</li>
+              <li>Домов, квартир, офисов и других жилых и производственных объектов</li>
+          </ul>
+      </div>
+      <div class="image-container">
+          <div class="slider">
+              <img src="./pictures/foto1.jpg" class="slide active" alt="Строительство 1">
+              <img src="./pictures/foto2.jpg" class="slide" alt="Строительство 2">
+              <img src="./pictures/foto3.jpg" class="slide" alt="Строительство 3">
+          </div>
+          <div class="dots">
+              <span class="dot active" onclick="currentSlide(0)"></span>
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+          </div>
+      </div>
+  </section>
 
-    <section class="faq-section">
-        <h2>Часто задаваемые вопросы</h2>
-        <div class="faq-container">
-
-            <div class="faq-item">
-                <button class="faq-question">В каких регионах вы работаете? <span class="faq-toggle">+</span></button>
-                <div class="faq-answer">
-                    <p>Мы оказываем строительные услуги в Ида-Вирумаа. Если ваш объект находится за пределами этого
-                        региона, свяжитесь с нами для уточнения деталей.</p>
-                </div>
+  <section class="service-section">
+    <div class="service-container">
+        <!-- Верхние карточки -->
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>ФУНДАМЕНТЫ</h3>
+                <ul>
+                    <li>Монолитные</li>
+                    <li>Блочные</li>
+                    <li>Из фибо-блоков</li>
+                    <li>Утепление фундаментов</li>
+                    <li>Гидроизоляция фундаментов</li>
+                </ul>
             </div>
-
-            <div class="faq-item">
-                <button class="faq-question">Как заказать консультацию? <span class="faq-toggle">+</span></button>
-                <div class="faq-answer">
-                    <p>Вы можете оставить заявку на нашем сайте, позвонить по телефону (+372) 53 320 419 или заполнить
-                        форму на сайте в разделе 'связаться'. Наш специалист свяжется с вами для обсуждения деталей.</p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question">Вы помогаете с выбором материалов? <span
-                        class="faq-toggle">+</span></button>
-                <div class="faq-answer">
-                    <p>Да, мы подбираем оптимальные строительные и отделочные материалы с учетом бюджета и пожеланий
-                        клиента.</p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question">Работаете ли вы с материалами заказчика? <span
-                        class="faq-toggle">+</span></button>
-                <div class="faq-answer">
-                    <p>Да, если материалы соответствуют требованиям качества и безопасности. Однако мы рекомендуем
-                        проконсультироваться с нашими специалистами перед покупкой.</p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question">Оказываете ли вы услуги по благоустройству территории? <span
-                        class="faq-toggle">+</span></button>
-                <div class="faq-answer">
-                    <p>Да, мы выполняем ландшафтные работы, укладку тротуарной плитки, установку заборов и другие виды
-                        благоустройства.</p>
-                </div>
-            </div>
-            <div class="faq-button-container">
-                <a href="#" class="learn-faq">УЗНАТЬ БОЛЬШЕ →</a>
+            <div class="service-card">
+                <h3>ФАСАДЫ И СТЕНЫ</h3>
+                <ul>
+                    <li>Каменные и деревокаркасные</li>
+                    <li>Утепление и штукатурка</li>
+                    <li>Вагонка</li>
+                    <li>Металлопрофиль</li>
+                    <li>Фасадные плиты</li>
+                    <li>Ремонт старых стен</li>
+                </ul>
             </div>
         </div>
-    </section>
+
+        <!-- Нижняя карточка с фото -->
+        <div class="service-card service-large">
+            <div class="service-content">
+                <!-- Текст -->
+                <div class="service-text">
+                    <h3>КРОВЕЛЬНЫЕ РАБОТЫ / КРЫШИ</h3>
+                    <ul>
+                        <li>Установка стропил</li>
+                        <li>Установка мансардных окон</li>
+                        <li>Устройство профильных и черепичных крыш</li>
+                        <li>Установка ветровых ящиков</li>
+                        <li>Монтаж водосточных систем</li>
+                    </ul>
+                </div>
+
+                <!-- Фото (НЕ ДОЛЖНО ВЫПАДАТЬ) -->
+                <div class="service-image-wrapper">
+                    <div class="service-slider">
+                        <img src="./pictures/roof1.jpg" class="service-slide active" alt="Кровельные работы">
+                        <img src="./pictures/roof2.jpg" class="service-slide" alt="Монтаж крыши">
+                        <img src="./pictures/roof3.jpg" class="service-slide" alt="Готовая кровля">
+                    </div>
+                    <div class="service-dots">
+                        <span class="service-dot active" onclick="currentServiceSlide(0)"></span>
+                        <span class="service-dot" onclick="currentServiceSlide(1)"></span>
+                        <span class="service-dot" onclick="currentServiceSlide(2)"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="interior-section">
+  <div class="interior-image-wrapper">
+      <div class="interior-slider">
+          <img src="./pictures/interior1.jpg" class="interior-slide active" alt="Фото ремонта">
+          <img src="./pictures/interior2.jpg" class="interior-slide" alt="Фото ремонта">
+          <img src="./pictures/interior3.jpg" class="interior-slide" alt="Фото ремонта">
+      </div>
+      <div class="interior-dots">
+          <span class="interior-dot active" onclick="changeSlide(0)"></span>
+          <span class="interior-dot" onclick="changeSlide(1)"></span>
+          <span class="interior-dot" onclick="changeSlide(2)"></span>
+      </div>
+  </div>
+  <div class="interior-content">
+      <h2>ВНУТРЕННЯЯ ОТДЕЛКА</h2>
+      <ul>
+          <li>демонтажные работы</li>
+          <li>межкомнатные перегородки и потолки</li>
+          <li>двери, окна, подоконники</li>
+          <li>штукатурные и малярные работы</li>
+          <li>укладка любого полового покрытия</li>
+          <li>установка сантехоборудования</li>
+          <li>строительство саун</li>
+      </ul>
+  </div>
+</section>
+
+<section class="video-section">
+  <video autoplay loop muted playsinline class="background-video">
+      <source src="./pictures/video.mp4" type="video/mp4">
+      Ваш браузер не поддерживает видео.
+  </video>
+  <div class="content-wrapper">
+      <div class="left-content">
+          <h2>ДОРОГИ И ПАРКОВКИ</h2>
+          <a href="#" class="btn-yellow">УЗНАТЬ БОЛЬШЕ</a>
+      </div>
+      <ul class="right-list">
+          <li>асфальтное покрытие</li>
+          <li>шоссейных дорог</li>
+          <li>парковки</li>
+          <li>лесные дороги</li>
+          <li>тротуарная плитка</li>
+          <li>устранение ям</li>
+          <li>площади</li>
+          <li>реконструкция дворов</li>
+          <li>расширение территории</li>
+      </ul>
+  </div>
+</section>
 
     <section id="contact-form" class="contact-form">
         <div class="container-form">

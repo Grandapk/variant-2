@@ -116,7 +116,6 @@
     visibility: hidden; /* Полностью скрыто */
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
   }
-  
   /* Каждый пункт внутри выпадающего списка */
   .dropdown-content li {
     list-style: none;
@@ -166,7 +165,7 @@
     background-color: #ffffff;
   }
   
-
+   
 
   /* HERO СЕКЦИЯ */
   .hero {
@@ -174,7 +173,7 @@
     height: 100vh;
     width: 100vw;
     min-height: 100vh;
-    background: url("./pictures/background.jpg") no-repeat center center/cover;
+    background: #ced4db;
     display: flex;
     align-items: center;
     justify-content: flex-start; /* заменяем left на flex-start */
@@ -197,13 +196,13 @@
     max-width: 700px;
     margin-left: 7%;  /* или другой отступ */
     text-align: left; 
-    line-height: 1;
+    line-height: 1,1;
   
   }
   
   
   .hero-content h2 {
-    font-size: 3rem; /* Размер шрифта */
+    font-size: 5rem; /* Размер шрифта */
     font-weight: bold;
     letter-spacing: 2px; /* Растяжение букв */
     text-transform: uppercase; /* Все буквы заглавные */
@@ -212,7 +211,7 @@
 
 
 .hero-content h3 {
-  font-size: 2.5rem; /* Размер для подзаголовка */
+  font-size: 2.6rem; /* Размер для подзаголовка */
   font-weight: bold;
   color: #ebce5a;
   letter-spacing: 1.5px; /* Увеличение расстояния между буквами */
@@ -240,16 +239,16 @@
     /* Кнопка "Связаться" - красная */
  
     .btn-red {
-      background-color: #ec0000;
+      background-color: transparent;
       color: #fcfcfc;
       border-radius: 50px;
-    
+        border: 2px solid white
     }
 
   .btn-white {
     background-color: transparent;
-    color: #fff;
-    border: 2px solid #fff;
+    color: #ff0000;
+    border: 2px solid #ff0000;
     border-radius: 50px;
   }
 
@@ -692,6 +691,7 @@ body {
 }
 
 
+
 form {
   margin: auto;
   padding: 20px;
@@ -894,19 +894,14 @@ input, select, textarea {
   color: #f1b000; /* Желтый цвет при наведении */
 }
 
-.hidden {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
 
 .show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-
-
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  
+  
 
 @media (max-width: 1017px) {
   .logo-left img {
@@ -931,55 +926,33 @@ input, select, textarea {
 
 /* Адаптивность !!! Стили снизу начинают работать от ширины экрана 768 и меньше !!! -*/
 @media (max-width: 768px) {
-
-
-.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-
-
-
   .content-section {
     flex-direction: column; /* Ставим блоки в колонку */
     text-align: center;
 }
 
+.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  
+  
+.nav-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 0, 0, 0.95);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-100%); /* Прячем меню */
+    transition: transform 0.3s ease-in-out; /* Добавляем плавность */
+  }
 
-
-
-    /* Корректируем выпадающее меню в бургер-меню */
-    .nav-links {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100vh;
-      background-color: rgba(255, 0, 0, 0.95);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      transform: translateX(-100%); /* Прячем меню */
-      transition: transform 0.3s ease-in-out; /* Добавляем плавность */
-    }
-
-  .nav-links.nav-active {
-    left: 0; /* Выдвигаем меню справа налево */
-}
-
-    .nav-links li {
-        text-align: center;
-        width: 100%;
-    }
-
-    .contact-button {
-        width: 80%;
-        margin: 10px auto;
-        text-align: center;
-        display: block;
-    }
 
 .hero-content h2 {
   font-size: 1.8rem; /* Размер шрифта */
@@ -991,17 +964,21 @@ text-align: left;
 text-align: left;
 }
 
-
-.nav-links li a {
-  font-size: 20px;
-  color: white;
-  text-decoration: none;
-  transition: 0.3s;
+.nav-links.nav-active {
+    left: 0; /* Выдвигаем меню справа налево */
+}
+.nav-links li {
+    text-align: center;
+    width: 100%;
 }
 
 
-
-
+.nav-links li a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+  }
 
 /* Бургер-меню (для мобильных) */
 .burger {
@@ -1030,7 +1007,6 @@ text-align: left;
   flex-direction: column;
   align-items: center;
 }
-
 
   h2 {
       font-size: 1.8rem;
