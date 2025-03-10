@@ -77,7 +77,7 @@
   .contact-button {
  /* Прозрачный фон */
     padding: 10px 20px; /* Внутренние отступы */
-    border: 2px solid #ff0000;
+    border: 2px solid #ffffff;
     border-radius: 50px; /* Закругленные углы */
 
     text-transform: uppercase; /* Преобразование в заглавные буквы */
